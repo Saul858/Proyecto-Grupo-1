@@ -29,7 +29,7 @@ button1.pack()
 
 def importCSV():
     path = entry1.get()
-    df = pd.read_csv(path, sep = ',', decimal = '.')
+    df = pd.read_csv(path, sep = ';', decimal = ',')
     print(df)
     df.to_pickle(r'C:\Users\brojas\OneDrive - Coopeservidores R.L\Descargas\df_importado.plk')
 
