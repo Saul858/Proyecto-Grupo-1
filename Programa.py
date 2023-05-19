@@ -1,7 +1,7 @@
-import pandas as pd #libreria para el analisis y estructura de datos, lee csv,excel y bd sql
-import numpy as np #libreria par calculos numericos, arrays, vectores, matrices
-import matplotlib.pyplot as plt # libreria para personalizar graficos, diagramas de barras, histogramas
-from tkinter import * #proporciona herramientas para administrar ventanas de dialogs
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from tkinter import *
 from tkinter import filedialog
 import dash
 import dash_core_components as dcc
@@ -9,6 +9,7 @@ import dash_html_components as html
 import dash_table
 from dash.dependencies import Input, Output, State
 import plotly.express as px
+import csv
 
 root = Tk()
 root.geometry("400x400")
@@ -28,9 +29,10 @@ button1.pack()
 
 def importCSV():
     path = entry1.get()
-    df = pd.read_csv(path, sep = ';', decimal = ',')
+    df = pd.read_csv(path, sep = ',', decimal = '.')
     print(df)
     df.to_pickle(r'C:\Users\brojas\OneDrive - Coopeservidores R.L\Descargas\df_importado.plk')
+
 
 # SAVE df to 
 
