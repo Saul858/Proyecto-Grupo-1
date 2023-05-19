@@ -1,7 +1,7 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from tkinter import *
+import pandas as pd #libreria para el analisis y estructura de datos, lee csv,excel y bd sql
+import numpy as np #libreria par calculos numericos, arrays, vectores, matrices
+import matplotlib.pyplot as plt # libreria para personalizar graficos, diagramas de barras, histogramas
+from tkinter import * #proporciona herramientas para administrar ventanas de dialogs
 from tkinter import filedialog
 import dash
 import dash_core_components as dcc
